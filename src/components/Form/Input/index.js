@@ -2,11 +2,14 @@ import React from 'react'
 
 import * as Styled from './styles';
 
-function Input({ ...properties }) {
+function Input({ children, ...properties }) {
   return (
-    <Styled.Input {...properties }>
-
-    </Styled.Input>
+    <Styled.InputContainer>
+      <Styled.InputIcon>
+        { children }
+      </Styled.InputIcon>
+      <Styled.Input {...properties }/>
+    </Styled.InputContainer>
   )
 }
 

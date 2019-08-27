@@ -15,7 +15,9 @@ function App() {
         <FontIcon className="fas fa-plus" text="Adicionar"/>
       </Button>
       <br/>
-      <Input width="150"></Input>
+      <Input width="150">
+        <FontIcon className="fas fa-search"/>
+      </Input>
     </div>
   );
 }
