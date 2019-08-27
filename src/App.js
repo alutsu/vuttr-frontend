@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Button from './components/Button';
+import FontIcon from './components/FontIcon';
+import Input from './components/Form/Input';
+
+import GlobalStyle from './styles/globals';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GlobalStyle/>
+      <h1>Hello</h1>
+      <Button >
+        <FontIcon className="fas fa-plus" text="Adicionar"/>
+      </Button>
+      <br/>
+      <Input width="150"></Input>
     </div>
   );
 }
