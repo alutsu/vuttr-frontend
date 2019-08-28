@@ -7,38 +7,34 @@ class TextArea extends Component {
     super(props);
 
     this.state = {
-      searchValue: '',
+      value: '',
     };
   }
 
   handleChange = async ({ target }) => {
-    await this.setState({ searchValue: target.value });
+    await this.setState({ value: target.value });
   }
 
   render() {
-    const { width } = this.props;
-    const { searchValue } = this.state;
+    const { rows, cols } = this.props;
+    const { value } = this.state;
 
     return (
-      <Styled.SearchContainer width={width}>
-        <i className="fas fa-search" />
-        <input
-          type="text"
-          name="search"
-          value={searchValue}
-          onChange={this.handleChange}
-        />
-      </Styled.SearchContainer>
+      <Styled.TextArea rows={rows} cols={cols}>
+        { value }
+      </Styled.TextArea>
     );
   }
 }
 
 TextArea.propTypes = {
-  width: PropTypes.string,
+  rows: PropTypes.string,
+  cols: PropTypes.string,
 };
 
 TextArea.defaultProps = {
-  width: null,
+  rows: null,
+  cols: null,
 };
 
 export default TextArea;
