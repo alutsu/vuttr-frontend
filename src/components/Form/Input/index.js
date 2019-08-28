@@ -1,16 +1,24 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import * as Styled from './styles';
 
 function Input({ children, ...properties }) {
   return (
-    <Styled.InputContainer>
-      <Styled.InputIcon>
-        { children }
-      </Styled.InputIcon>
-      <Styled.Input {...properties }/>
-    </Styled.InputContainer>
-  )
+    <Styled.Input
+      width={properties.width}
+      bgColor={properties.bgColor}
+      border={properties.border}
+    />
+  );
 }
 
-export default Input
+Input.propTypes = {
+  children: PropTypes.any,
+};
+
+Input.defaultProps = {
+  children: null,
+};
+
+export default Input;

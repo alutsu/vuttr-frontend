@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 import colors from './colors';
 
@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${colors.mostDarkestWhite}
+    background-color: ${colors.darkWhite}
   }
 
   body, input, textarea {

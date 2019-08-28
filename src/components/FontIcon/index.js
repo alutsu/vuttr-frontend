@@ -3,22 +3,22 @@ import PropTypes from 'prop-types';
 
 import * as Styled from './styles';
 
-function FontIcon({ text, ...properties }) {
+function FontIcon({ text }) {
   return (
     <>
-      <Styled.Icon {...properties} >
-        { !!text ? ` ${text}` : '' }
+      <Styled.Icon>
+        { text ? ` ${text}` : '' }
       </Styled.Icon>
     </>
-  )
+  );
 }
 
 FontIcon.propTypes = {
-  text: PropTypes.string
-}
+  text: PropTypes.string,
+};
 
 FontIcon.defaultProps = {
-  text: null
-}
+  text: null,
+};
 
-export default FontIcon
+export default FontIcon;

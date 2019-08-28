@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import * as Styled from './styles';
 
-class SearchBox extends Component {
+class TextArea extends Component {
   constructor(props) {
     super(props);
 
@@ -33,12 +33,12 @@ class SearchBox extends Component {
   }
 }
 
-SearchBox.propTypes = {
+TextArea.propTypes = {
   width: PropTypes.string,
 };
 
-SearchBox.defaultProps = {
+TextArea.defaultProps = {
   width: null,
 };
 
-export default SearchBox;
+export default TextArea;
