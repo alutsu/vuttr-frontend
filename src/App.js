@@ -21,7 +21,6 @@ function App() {
       <SearchBox />
       <br />
       <TextArea />
-
     </div>
   );
 }
