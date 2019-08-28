@@ -5,7 +5,7 @@ import colors from '../../styles/colors';
 export const Container = styled.div`
   position: relative;
   background-color: ${colors.white};
-  border: 1px solid ${colors.darkWhite};
+  border: 1px solid ${colors.mostDarkestWhite};
   border-radius: 5px;
   margin: 20px 5px;
   padding: 5px;

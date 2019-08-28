@@ -7,7 +7,7 @@ export const SearchContainer = styled.div`
   align-items: center;
   background-color: ${colors.darkWhite};
   border-radius: 5px;
-  border: 1px solid ${colors.darkerWhite};
+  border: 1px solid ${colors.mostDarkestWhite};
   padding: 5px;
   width: ${(props) => `${props.width ? props.width : '300px'}`};
 
